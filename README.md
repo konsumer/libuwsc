@@ -26,6 +26,10 @@
 A Lightweight and fully asynchronous WebSocket client library based on [libev] for Embedded Linux.
 And provide Lua-binding.
 
+This has been modified to conditionally check if it's being built in emscripten, and use the browser API for websockets, if it has.
+
+This will allow for websocet clients that work in love/lovejs, for example.
+
 
 # Why should I choose libev?
  libev tries to follow the UNIX toolbox philosophy of doing one thing only, as good as possible.
